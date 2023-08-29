@@ -25,14 +25,23 @@
         <button onclick="handleSearchBtn()" class="btn btn-error">Sort By Date</button>
       </div>
       <section>
-        <div id="al-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+        <div id="loadingSpinner" class="my-20 text-center hidden">
+          <span class="loading loading-spinner loading-lg"></span>
+        </div>
+
+        <div  id="al-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
           
         </div>
-        
+        <div class=" text-white my-5 text-center">
+          <button onclick="handleShowMoreBtn()" id="show-all-container" class="btn btn-active btn-accent hidden">Show more</button>
+        </div>
       </section>
-      <div class=" text-white my-5 text-center">
-        <button onclick="handleShowMoreBtn()" class="btn btn-active btn-accent">Show more</button>
-      </div>
+      <section>
+        <div id="show-details-container">
+
+        </div>
+      </section>
+      
     </main>
      
     
